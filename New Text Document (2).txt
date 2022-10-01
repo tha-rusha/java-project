@@ -1,0 +1,41 @@
+(03)
+1.public class Throws {
+    
+     public int divideNum(int m,int n ) throws ArithmeticException
+     {
+         int div=m/n;
+         return div;
+     }
+
+    public static void main(String[] args) 
+    {
+        Throws t=new Throws();
+        try
+        {
+             System.out.println("Answer is : "+t.divideNum(20,0));
+        }
+       catch (ArithmeticException e)
+       {
+           System.out.println(" number divide by zero error");
+       }
+            
+        
+        
+    }
+    
+}
+
+
+2.ArrayIndexOutOfBoundException
+
+public class ArrayIndexOutOfBoundException
+{
+	public static void main(String[]args)
+	{
+		String [] arr={"john","Smith","Kumara","jonny"};
+		for (int i=0;i<=arr.length;i++)
+		{
+			System.outprintln(arr[i]);
+		}
+	}
+}
